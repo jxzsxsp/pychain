@@ -90,7 +90,7 @@ def parse_args():
 
 if __name__ == '__main__':
     args = parse_args()
-    app.run(host='localhost',
+    app.run(host='0.0.0.0',
             port=args.port,
             debug=True,
             threaded=True) # If not True, on Windows ther server will be fucking slow.
